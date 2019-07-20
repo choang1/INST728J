@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>Week 2 Quiz</title>
+</head>
+<h1>WEEK 2 QUIZ</h1>
+<body>
+    <h3>1. Can ordered and unordered lists nest within each other?</h3>
+    <ul>
+        <li>Hmm</li>
+            <ol>
+                <li>yes</li>
+                    <ul>
+                        <li>it</li>
+                    </ul>
+                <li>appears</li>
+            </ol>
+        <li><strong>It</strong></li>
+        <ol>
+            <li>is</li>
+                <ul>
+                    <li><em>possible</em></li>
+                </ul>
+            <li>to do so.</li>
+        </ol>
+    </ul>
+    <p><span style="background-color: lightyellow">Based off the example above,<br>
+    yes, unordered lists and ordered lists are capable of nesting within each other.</span>
+    </p>
+    
+<div>
+<h3>2. Is it possible to nest an ordered list within an unordered list or vice versa? <br>
+    3. Give example showing customizing of ordered and unordered list?
+</h3>
+<table>
+<col width="360px">
+<col width="360px">
+<style>
+    table, th,td {
+        border : 1px solid black;
+        padding : 5px;
+        text-align: left;
+        }
+</style>
+    <tr>
+        <th style="text-align: center; background-color: lightblue"><strong>Unordered within Ordered</strong></th>
+        <th style="text-align: center; background-color: lightblue"><strong>Ordered within Unordered</strong></th>
+    </tr>
+    <tr>
+        <td>
+            <ol>
+                <li><u>As shown above,</u></li>
+                <ul>
+                    <li>it <strong>is</strong> possible</li>
+                </ul>
+                <li><u>to do so.</u></li>
+                <ul>
+                    <li><em>as</em></li>
+                    <li><em>you</em></li>
+                    <li><em>can</em></li>
+                    <li><em>see.</em></li>
+                </ul>
+            </ol>
+        </td>
+        <td>
+            <ul>
+                <li><strong>Same here.</strong></li>
+                <ol>
+                    <li>it appears</li>
+                    <li><u>absolutely</u>
+                    <li>possible</li>
+                </ol>
+                    <li><strong>to do so</strong></li>
+                <ol>
+                    <li>in</li>
+                    <li>the</li>
+                    <li>reverse</li>
+                    <li>situation.</li>
+                </ol>
+            </ul>
+        </td>
+    </tr>
+</table>
+<p><span style="background-color: lightyellow">The sample in the above table shows each list can be nested within each other and the other way around. <br>
+     Each component within these lists can be stylized accordingly. </span>
+</p>
+</div>
+
+<div>
+<h3>4. Describe basic parts of a table and tags used to identify them?
+</h3>
+<p><span style="background-color: lightyellow">A table is composed with the following tags: < table > table element, < tr > table row, < th > table header, and < td > table data. <br>
+In creating a table, an html file must lead and end with the < table > </table > element and within it, a series of < tr > table rows. <br>
+Nested within the < tr > tags, one can denote a space as < th > table header (which will format similarly to a header tag) or < td > table data.<br>
+The more < td > you include within a < tr > will determine the number of columns a table will have.</span>
+</p>
+</div>
+
+<div>
+<h3>5. How do you create cells that span more than one column or row?
+</h3>
+<p><span style="background-color: lightyellow">One can create multiple rows within a table by implementing multiple sets of table row tags < tr >. Within a table row, the number of nested table data  < td > sets determines the number of columns within that row.<br>
+For example, a table row with 3 nested < td > components will form 3 columns.</span>
+</p>
+<table>
+    <tr>
+        <th>table row 1, column 1 header</th>
+        <th>table row 1, column 2 header</th>
+        <th>table row 1, column 3 header</th>
+    </tr>
+     <tr>
+        <td>table row 2, column 1 data</td>
+        <td>table row 2, column 2 data</td>
+        <td>table row 2, column 3 data</td>
+    </tr>
+    <tr>
+        <td>table row 3, column 1 data</td>
+        <td>table row 3, column 2 data</td>
+        <td>table row 3, column 3 data</td>
+    </tr>
+</table>
+</div>
+    
+<div>
+<h3>6. Create a nested table that contains 4 rows and 5 columns. Create a second table that contains 3 rows and 2 columns inside 3rd row and 4th col of parent table.
+</h3>
+<table>
+    <tr>
+        <th>table row 1, column 1 header</th>
+        <th>table row 1, column 2 header</th>
+        <th>table row 1, column 3 header</th>
+        <th>table row 1, column 4 header</th>
+        <th>table row 1, column 5 header</th>
+    </tr>
+     <tr>
+        <td>table row 2, column 1 data</td>
+        <td>table row 2, column 2 data</td>
+        <td>table row 2, column 3 data</td>
+        <td>table row 2, column 4 data</td>
+        <td>table row 2, column 5 data</td>
+    </tr>
+    <tr>
+        <td>table row 3, column 1 data</td>
+        <td>table row 3, column 2 data</td>
+        <td>table row 3, column 3 data</td>
+        <td>table row 3, column 4 data
+            <table style="background-color: lightyellow">
+            <tr>
+                <th>row 1, column 1 header</th>
+                <th>row 1, column 2 header</th>
+            </tr>
+             <tr>
+                <td>row 2, column 1 data</td>
+                <td>row 2, column 2 data</td>
+            </tr>
+            <tr>
+                <td>row 3, column 1 data</td>
+                <td>row 3, column 2 data</td>
+            </tr>
+            </table>
+        </td>
+        <td>table row 3, column 5 data</td>
+    </tr>
+    <tr>
+        <td>table row 4, column 1 data</td>
+        <td>table row 4, column 2 data</td>
+        <td>table row 4, column 3 data</td>
+        <td>table row 4, column 4 data</td>
+        <td>table row 4, column 5 data</td>
+    </tr>
+</table>
+</div>
+    
+<div>
+<h3>7. Write down styling attributes you can use while creating table and explain what they do.
+</h3>
+<p><span style="background-color: lightyellow">Presented in the unordered list below are some common attributes that can manipulate the presentation of a table.</span><br>
+<ul>
+    <li>< style > table, th, td </li>
+        <ul>
+        <li><strong>border : 1px solid black</strong> displays table border type; in this case it is a solid black border at 1 pixel (no border by default)</li>
+        <li><strong>padding : 5px</strong> implements spacing within cells around text at 5 pixels.</li>
+        <li><strong>text-align: left</strong> displays text alignment within table cells; left in this example. </li>
+        <li><strong>background-color: lightyellow</strong> adds background color</li>
+        </ul>
+        <li><strong>col width="180px"</strong> manipulates width size of column at 180 pixels.
+</ul>
+</p>
+</div>
+
+</body>
+</html>
